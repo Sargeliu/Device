@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -8,7 +8,7 @@
 
 <body>
 
-  <header class="page-header">
+  <header class="page__header">
     <a>
       <img src="" alt="Логотип Device">
     </a>
@@ -46,7 +46,7 @@
     </nav>
   </header>
 
-  <main class="main-index">
+  <main class="page__main">
     <h1>Интернет-магазин гаджетов - Device</h1>
 
     <section class="gallery">
@@ -161,7 +161,64 @@
       </ul>
       <a href="#">Напишите нам</a>
     </section>
+
+    <section class="newsletter">
+      <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
+      <p class="newsletter__descr">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+      <form class="newsletter__form form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="newsletter__email">
+          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail">
+        </p>
+        <button class="form__btn" type="submit">Подписаться</button>
+        <p class="form__btn">Это бесплатно</p>
+      </form>
+    </section>
   </main>
+
+  <footer class="page__footer footer">
+    <a>
+      <img class="footer__logo" src="" alt="Логотип Device">
+    </a>
+    <section class="footer__address">
+      <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+      <div class="footer__divider"></div>
+    </section>
+    <section class="footer__info">
+      <ul class="footer__info-list">
+        <li class="footer__info-item">
+          <a href="#">Доставка</a>
+        </li>
+        <li class="footer__info-item">
+          <a href="#">Гарантия</a>
+        </li>
+        <li class="footer__info-item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="button" href="#">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="button" href="#">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="button" href="#">
+          <span class="visually-hidden">Twitter</span>
+        </a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer__contacts">
+        <a class="footer__contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="htmlacademy-link" href="http://htmlacademy.ru/">.html academy</a>
+    </section>
+  </footer>
 </body>
 
 </html>
