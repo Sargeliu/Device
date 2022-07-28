@@ -1,13 +1,28 @@
 .pagination {
+  display: flex;
+  flex-direction: row;
   background-color: @light-gray;
 
+  &__item {
+    &:first-child {
+    margin-right: auto;
+    }
+
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+
   &__link {
+    display: block;
+    padding: 28px;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     color: @dark;
     opacity: 0.3;
+    cursor: pointer;
   }
 
   &__next,

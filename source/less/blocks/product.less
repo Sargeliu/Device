@@ -1,0 +1,38 @@
+.product {
+  padding: 69px 140px 77px 72px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 44px;
+    padding-bottom: 44px;
+    }
+
+  &__link {
+    color: @black;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__price {
+    line-height: 21px;
+    color: @dark;
+  }
+
+  &__show-more {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 51px;
+    width: 100%;
+    padding: 21px 0;
+    font-size: 16px;
+    line-height: 19px;
+    border: 3px solid @light-gray;
+  }
+}

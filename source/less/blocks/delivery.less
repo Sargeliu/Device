@@ -1,0 +1,29 @@
+.delivery {
+  display: flex;
+  flex-direction: row-reverse;
+  &__box {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    background-color: @light-gray;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: @black;
+  }
+
+  &__icon {
+    background-color: @yellow-light;
+  }
+}

@@ -4,16 +4,32 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
+
+  &__header {
+    width: 1160px;
+    margin: 0 auto;
+  }
+
+  &__main {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+    min-width: 320px;
+    min-height: 100%;
+    
+    background-color: #ffffff;
+    color: @dark;
+  }
+
+  &__footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: @dark;
+  }
+
+  &__container {
+    width: 1161px;
+    margin: 0 auto;
+  }
 }
 
-.page__main {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-  min-width: 320px;
-  min-height: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  color: @dark;
-}

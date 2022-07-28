@@ -1,5 +1,23 @@
 .footer {
+  display: flex;
+  flex-direction: column;
   background-color: @dark;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__adds {
+    margin-right: auto;
+  }
+
+  &__contacts {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   &__address {
     font-style: normal;
